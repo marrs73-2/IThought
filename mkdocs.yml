@@ -1,0 +1,51 @@
+# Базовые настройки
+site_name: IThought
+site_description: Сайт созданный с помощью MkDocs и GitHub Pages
+site_author: Marrs73
+
+# URL будет заменен после публикации
+site_url: https://marrs73-2.github.io/my-awesome-site/
+
+# # Подключаем тему Material
+# theme:
+#   name: material
+#   language: ru
+#   features:
+#     - navigation.tabs        # Вкладки в навигации
+#     - navigation.sections    # Секции в меню
+#     - navigation.top         # Кнопка "наверх"
+#     - search.highlight       # Подсветка в поиске
+#     - search.suggest         # Подсказки в поиске
+#     - content.code.copy      # Кнопка копирования кода
+  
+#   # Настройка цветовой схемы
+#   palette:
+#     - scheme: default        # Светлая тема
+#       primary: indigo        # Основной цвет
+#       accent: indigo         # Акцентный цвет
+#       toggle:
+#         icon: material/brightness-7
+#         name: Переключить на темную тему
+#     - scheme: slate          # Темная тема
+#       primary: black
+#       accent: indigo
+#       toggle:
+#         icon: material/brightness-4
+#         name: Переключить на светлую тему
+
+# Расширения для Markdown
+# markdown_extensions:
+#   - admonition               # Для заметок
+#   - pymdownx.highlight:      # Подсветка кода
+#       anchor_linenums: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.snippets
+#   - pymdownx.superfences
+#   - pymdownx.details
+#   - pymdownx.tabbed:
+#       alternate_style: true
+
+# Навигация (можно оставить автоматическую или настроить вручную)
+# nav:
+#   - Главная: index.md
+#   - О проекте: about.md
