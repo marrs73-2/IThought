@@ -1,0 +1,44 @@
+name: Деплой MkDocs сайта
+
+on:
+  push:
+    branches:
+      - master  # или master, если у вас так названа ветка
+  workflow_dispatch:  # Позволяет запускать вручную из интерфейса GitHub
+
+permissions:
+  contents: write  # Нужно для push в ветку gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Загружаем код из репозитория
+      - uses: actions/checkout@v4
+      
+      # 2. Устанавливаем Python
+      - name: Установка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'  # Кэшируем зависимости для ускорения
+      
+      # 3. Устанавливаем зависимости
+      - name: Установка MkDocs и темы
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-bootstrap386
+          pip install mkdocs-minify-plugin  # Доп. плагин для минификации
+      
+      # 4. Собираем сайт
+      - name: Сборка сайта
+        run: mkdocs build --site-dir site
+      
+      # 5. Деплоим на GitHub Pages
+      - name: Деплой на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages  # Ветка, куда будет задеплоен сайт
+          # user_name: github-actions[bot]
+          # user_email: github-actions[bot]@users.noreply.github.com
