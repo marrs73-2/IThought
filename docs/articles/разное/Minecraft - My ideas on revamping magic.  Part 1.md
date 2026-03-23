@@ -1,3 +1,7 @@
+---
+date: 2024-04-22
+---
+
 22 APRIL 2024
 Minecraft - My ideas on revamping magic. 
 Part 1. What magical systems exist and what's wrong with current minecraft's magic. 

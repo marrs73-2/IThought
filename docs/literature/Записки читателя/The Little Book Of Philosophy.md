@@ -1,3 +1,6 @@
+---
+date: 2026-02-14
+---
 14 Feb 2026
 ![](../../images/phil1.jpg)
 ![](../../images/phil2.jpg)

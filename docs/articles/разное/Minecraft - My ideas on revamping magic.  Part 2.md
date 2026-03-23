@@ -1,3 +1,6 @@
+---
+date: 2024-06-13
+---
 13 JUN 2024
 Minecraft - My ideas on revamping magic. 
 Part 2. My current progress on the design of a magic mod: 

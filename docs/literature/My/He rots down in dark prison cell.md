@@ -1,3 +1,6 @@
+---
+date: 2023-10-08
+---
 8 OCT 2023
 He rots down in dark prison cell 
 Though visited by the Prince himself 

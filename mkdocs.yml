@@ -11,14 +11,59 @@ site_url: https://marrs73-2.github.io/my-awesome-site/
 # # Подключаем тему Material
 theme:
   name: material
+  #custom_dir: overrides
   language: ru
   features:
     - navigation.tabs        # Вкладки в навигации
-    - navigation.sections    # Секции в меню
+    - navigation.tabs.sticky
+    - navigation.path
+    # - navigation.sections    # Секции в меню
     - navigation.top         # Кнопка "наверх"
     - search.highlight       # Подсветка в поиске
     - search.suggest         # Подсказки в поиске
-    - content.code.copy      # Кнопка копирования кода
+    - content.code.copy      # Кнопка копирования кода\
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: brown
+      accent: deep orange
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: deep purple
+      accent: deep purple
+  font:
+      code: Roboto Mono
+
+plugins:
+  - search
+  - tags
+  - awesome-nav
+  - blogging:
+      dirs:
+        - articles/разное
+        - articles/Философские мысли
+        - literature/My
+        - literature/Записки читателя
+      locale: ru
+      sort:
+        from: new
+        by: creation
+      size: 10  # количество статей на странице
+
+
+# nav:
+#   - sort: date
+ # - optimize
+
   
 #   # Настройка цветовой схемы
 #   palette:
