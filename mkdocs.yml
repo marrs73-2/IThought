@@ -59,7 +59,8 @@ plugins:
         by: creation
       size: 10  # количество статей на странице
 
-
+extra_css:
+  - stylesheets/extra.css
 # nav:
 #   - sort: date
  # - optimize
