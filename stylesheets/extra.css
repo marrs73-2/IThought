@@ -1,4 +1,59 @@
-@font-face {
+/* @font-face {
   font-family: "<font>";
   src: "...";
+} */
+
+.md-typeset {
+  font-size: 15px;  /* 0.85 = 13.6px при стандартном 16px */
 }
+
+.md-nav {
+  font-size: 15px;  /* 0.85 = 13.6px при стандартном 16px */
+}
+
+/* @font-face {
+  font-family: 'DotGothic16';
+  src: url('/fonts/DotGothic16-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;  
+}
+
+:root {
+  --md-text-font: 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --md-code-font: 'JetBrains Mono', 'Fira Code', monospace; 
+} */
+
+/* Подключение шрифта */
+@font-face {
+  font-family: 'DotGothic16';
+  src: url('/fonts/DotGothic16-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url('/fonts/Onest-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+.md-typeset {
+  font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
+}
+
+.md-nav, .md-nav__link {
+  font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
+}
+
+
+.md-header, .md-tabs {
+  font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
+}
+
