@@ -26,7 +26,7 @@ jobs:
       
       - name: Установка MkDocs и темы
         run: |
-          pip install mkdocs mkdocs-material mkdocs-bootstrap386 mkdocs-blogging-plugin
+          pip install mkdocs mkdocs-material mkdocs-bootstrap386 mkdocs-blogging-plugin awesome-nav
       
       - name: Сборка сайта
         run: mkdocs build --site-dir site
