@@ -1,22 +1,24 @@
 # Базовые настройки
-site_name: IThought
+site_name: OOS
 site_description: Сайт созданный с помощью MkDocs и GitHub Pages
 site_author: Marrs73
 
 # URL будет заменен после публикации
 site_url: https://marrs73-2.github.io/my-awesome-site/
 
+# theme: material
+
 # # Подключаем тему Material
-# theme:
-#   name: material
-#   language: ru
-#   features:
-#     - navigation.tabs        # Вкладки в навигации
-#     - navigation.sections    # Секции в меню
-#     - navigation.top         # Кнопка "наверх"
-#     - search.highlight       # Подсветка в поиске
-#     - search.suggest         # Подсказки в поиске
-#     - content.code.copy      # Кнопка копирования кода
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs        # Вкладки в навигации
+    - navigation.sections    # Секции в меню
+    - navigation.top         # Кнопка "наверх"
+    - search.highlight       # Подсветка в поиске
+    - search.suggest         # Подсказки в поиске
+    - content.code.copy      # Кнопка копирования кода
   
 #   # Настройка цветовой схемы
 #   palette:
