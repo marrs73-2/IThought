@@ -4,9 +4,13 @@ site_description: Сайт созданный с помощью MkDocs и GitHub
 site_author: Marrs73
 
 # URL будет заменен после публикации
-site_url: https://marrs73-2.github.io/my-awesome-site/
+site_url: https://orderofstone.ru/
 
 # theme: material
+use_directory_urls: 
+
+
+
 
 # # Подключаем тему Material
 theme:
@@ -22,6 +26,7 @@ theme:
     - search.highlight       # Подсветка в поиске
     - search.suggest         # Подсказки в поиске
     - content.code.copy      # Кнопка копирования кода\
+    - toc.integrate
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -49,10 +54,10 @@ plugins:
   - awesome-nav
   - blogging:
       dirs:
-        - articles/разное
-        - articles/Философские мысли
-        - literature/My
-        - literature/Записки читателя
+      - Философские мысли
+      - Записки читателя
+      - Моя художка
+      - Остальное
       locale: ru
       sort:
         from: new
