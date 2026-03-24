@@ -4,7 +4,7 @@
 } */
 
 .md-typeset {
-  font-size: 15px;  /* 0.85 = 13.6px при стандартном 16px */
+  font-size: 16px;  /* 0.85 = 13.6px при стандартном 16px */
 }
 
 .md-nav {
@@ -41,6 +41,57 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'consolas';
+  src: url('/fonts/consolas.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'catV';
+  src: url('/fonts/CatV_6x12_9.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CourierWG';
+  src: url('/fonts/Courier WGL4 Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rursus';
+  src: url('/fonts/RursusCompactMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TDAtext';
+  src: url('/fonts/TDAText.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotCourierSans';
+  src: url('/fonts/NotCourierSans.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira';
+  src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 
@@ -48,12 +99,9 @@
   font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
 }
 
-.md-nav, .md-nav__link {
-  font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
+
+
+/* Только для основного контента */
+.md-typeset {
+    line-height: 1.;
 }
-
-
-.md-header, .md-tabs {
-  font-family: 'Onest', 'DotGothic16', 'Noto Sans', 'Roboto', 'Segoe UI', sans-serif !important;
-}
-
