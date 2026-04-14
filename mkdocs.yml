@@ -26,7 +26,7 @@ theme:
     - search.highlight       # Подсветка в поиске
     - search.suggest         # Подсказки в поиске
     - content.code.copy      # Кнопка копирования кода\
-    - toc.integrate
+    # - toc.integrate
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -63,6 +63,9 @@ plugins:
         from: new
         by: creation
       size: 10  # количество статей на странице
+
+markdown_extensions:
+  - markdown_captions  
 
 extra_css:
   - stylesheets/extra.css
