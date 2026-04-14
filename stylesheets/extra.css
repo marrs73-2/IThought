@@ -105,3 +105,57 @@
 .md-typeset {
     line-height: 1.;
 }
+
+.md-grid { /* увеличение ширины средней части сайта с текстом */
+    max-width: 90%;  /* или конкретное значение: 1440px, 1600px */
+}
+
+figcaption { /* стилизация подписей в markdown captions */
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 0.1rem;
+    font-size: 0.8em;
+}
+
+
+.figure-center {
+    text-align: center;
+}
+
+.figure-center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Левое выравнивание с подписью */
+.figure-left {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.figure-left figcaption {
+    text-align: left;
+}
+
+/* Правое выравнивание с подписью */
+.figure-right {
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.figure-right figcaption {
+    text-align: right;
+}
+
+/* Очистка обтекания после правого/левого блока */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
